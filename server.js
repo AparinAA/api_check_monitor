@@ -2,9 +2,9 @@ require('dotenv').config();
 const http = require("http");
 const { Spot } = require('@binance/connector'); //Binance SPOT api
 const fs = require('fs');
-const { promiseTickersWithSpread } = require('./getCurrencies');
+const { promiseTickersWithSpread } = require('./helpfunction/getCurrencies');
 const API = require('kucoin-node-sdk');
-const { addSpreadList } = require('./addSpreadList');
+const { addSpreadList } = require('./helpfunction/addSpreadList');
 
 
 const OKXclient = require('okx-public-api').default;
